@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            children: [
+              Text("Text 1", style: TextStyle(color: Colors.blue),),
+              Text("Text 2", style: TextStyle(color: Colors.purple),),
+              Text("Text 3", style: TextStyle(color: Colors.green),),
+              FlatButton( child: Text("Register", style: TextStyle(color: Colors.white),),
+                  color: Colors.blue,
+                  onPressed: (){}
+                  ),
+              Text("Text 4", style: TextStyle(color: Colors.yellow),),
+              Text("Text 5", style: TextStyle(color: Colors.brown),),
+              Text("Text 6", style: TextStyle(color: Colors.red),),
+
+            ],
+          ),
+        ),
+          appBar: AppBar(
+            title: Text("Online Store Managment",),
+          ),
+      ),
+    );
+  }
+
+}
