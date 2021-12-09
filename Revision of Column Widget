@@ -1,0 +1,41 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceAround, //many properties can be used here a/c to required
+          children: <Widget> [
+            Text("Hello Flutter"),
+            FlatButton.icon(onPressed: (){},
+                color: Colors.blue,
+                icon: Icon(Icons.add_call), label: Text("Add Call")),
+            Text("What's up Buddy ?"),
+          ],
+        ),
+
+
+
+        ),
+
+        appBar: AppBar(
+          title: Text("Online Store Applicaton"),
+        ),
+
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: (){},
+        ),
+      ),
+    );
+  }
+
+}
