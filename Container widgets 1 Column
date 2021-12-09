@@ -1,0 +1,83 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+      home: Scaffold(
+        body: Column(
+          children: <Widget>[
+            Container(      //1st Container Start
+              child: Center(
+                child: Text("My First Container", style: TextStyle(color: Colors.lightGreen ),
+                ),
+              ),
+              width: double.infinity,
+              height: 100,
+              color: Colors.orange,
+              margin: EdgeInsets.all(16),
+            ),//1st Container End
+            Container(      //1st Container Start
+              child: Center(
+                child: Text("My First Container", style: TextStyle(color: Colors.brown ),
+                ),
+              ),
+              width: double.infinity,
+              height: 100,
+              color: Colors.yellow,
+              margin: EdgeInsets.all(16),
+            ),  //2nd Container End
+            Container(      //3rd Container Start
+              child: Center(
+                child: Text("My Third Container", style: TextStyle(color: Colors.white ),
+                ),
+              ),
+              width: double.infinity,
+              height: 100,
+              color: Colors.purple,
+              margin: EdgeInsets.all(16),
+            ),  //3rd Container End
+            Container(      //Fourth Container Start
+              child: Center(
+                child: Text("My Fourth Container", style: TextStyle(color: Colors.lightGreen ),
+                ),
+              ),
+              width: double.infinity,
+              height: 100,
+              color: Colors.pink,
+              margin: EdgeInsets.all(16),
+            ),  //4th Container End
+            Container(      //5th Container Start
+              child: Center(
+                child: Text("My Fifth Container", style: TextStyle(color: Colors.black ),
+                ),
+              ),
+              width: double.infinity,
+              height: 100,
+              color: Colors.grey,
+              margin: EdgeInsets.all(16),
+            ),  //5th Container End
+          ],
+        ),
+
+      appBar: AppBar(
+        title: Text("Online Store Managment"),
+      ),
+
+    floatingActionButton: FloatingActionButton(
+    child: Icon(Icons.add_call),
+    onPressed: (){},
+          ),
+
+      ),
+      );
+
+
+  }
+
+}
