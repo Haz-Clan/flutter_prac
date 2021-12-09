@@ -1,0 +1,57 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+      home: Scaffold(
+        body: Column(
+          children: <Widget>[
+            Container(child: Center(
+                child: Text("My First Container", style: TextStyle(color: Colors.white),
+                ),
+            ),
+              width: double.infinity,
+              height: 200,
+               margin: EdgeInsets.all(16) ,
+              color: Colors.purple
+            ),
+            Container(child: Center(
+              child: Text("My Second Container", style: TextStyle(color: Colors.white),
+              ),
+            ),
+                width: double.infinity,
+                height: 200,
+                margin: EdgeInsets.all(16) ,
+                color: Colors.lightGreen
+            ),
+
+            Container(child: Center(
+              child: Text("My Third Container", style: TextStyle(color: Colors.white),
+              ),
+            ),
+                width: double.infinity,
+                height: 100,
+                margin: EdgeInsets.all(16) ,
+                color: Colors.pinkAccent
+            ),
+          ],
+        ),
+        appBar: AppBar(
+          title: Text("Online Store Applicaton"),
+        ),
+
+        floatingActionButton: FloatingActionButton(
+          child: Icon(Icons.add),
+          onPressed: (){},
+        ),
+      ),
+    );
+  }
+
+}
