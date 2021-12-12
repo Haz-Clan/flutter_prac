@@ -1,0 +1,62 @@
+import 'package:flutter/material.dart';
+
+void main(){
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+      home: Scaffold(
+        body: Column(
+          children: <Widget>[
+            Container(
+              width: double.infinity,
+              height: 200,
+              margin: EdgeInsets.all(16),
+              color: Colors.red,
+
+              child: Image.asset("assets/hamza.jpeg", fit: BoxFit.fitHeight),
+            ),
+
+            Container(
+                 child  : FlatButton(
+              child: Text("Login", style: TextStyle(color: Colors.white, fontStyle: FontStyle.italic),
+              ),
+              color: Colors.blue,
+              onPressed: (){},
+            ),
+            ),
+
+
+            Container(
+              child  : FlatButton(
+                child: Text("Register", style: TextStyle(color: Colors.white, fontStyle: FontStyle.italic),
+                ),
+                color: Colors.blue,
+                onPressed: (){},
+              ),
+            ),
+
+
+            Container(
+              width: double.infinity,
+              height: 200,
+              margin: EdgeInsets.all(16),
+              color: Colors.black,
+
+              child: Image.asset("assets/emart.jpeg", fit: BoxFit.contain,),
+            ),
+          ],
+        ),
+
+        appBar: AppBar(
+          title: Text("Online Managment Store"),
+        ),
+
+      ),
+    );
+  }
+}
