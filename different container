@@ -1,0 +1,70 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.teal,
+        body: SafeArea(
+          child: Column(
+            // mainAxisSize: MainAxisSize.min,
+            // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[
+              Container(
+                height: 100.0,
+                // width: 100.0,
+                margin: EdgeInsets.symmetric(vertical: 40.0, horizontal: 70.0),
+                padding: EdgeInsets.all(20),
+                color: Colors.white,
+                child: Text(
+                  'Hello World',
+                  style: TextStyle(color: Colors.yellow),
+                ),
+              ),
+              Container(
+                height: 100.0,
+                // width: 100.0,
+                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 70.0),
+                padding: EdgeInsets.all(20),
+                color: Colors.pink,
+                child: Text(
+                  'Hello World 2',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+              Container(
+                height: 100.0,
+                // width: 100.0,
+                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 70.0),
+                padding: EdgeInsets.all(20),
+                color: Colors.yellow,
+                child: Text(
+                  'Hello World 3',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+              Container(
+                height: 100.0,
+                // width: 100.0,
+                margin: EdgeInsets.symmetric(vertical: 20.0, horizontal: 70.0),
+                padding: EdgeInsets.all(20),
+                color: Colors.purple,
+                child: Text(
+                  'Hello World 4',
+                  style: TextStyle(color: Colors.black),
+                ),
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
