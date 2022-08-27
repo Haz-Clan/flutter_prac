@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Banner(
+          message: 'New Arrival',
+          location: BannerLocation.topStart,
+          child: Container(
+            height: 200,
+            width: 200,
+            color: Colors.yellow,
+            alignment: Alignment.center,
+            child: const Text('Some Item'),
+          ),
+        ),
+        appBar: AppBar(
+          title: const Text('I am Rich'),
+          backgroundColor: Colors.blueGrey[900],
+        ),
+        backgroundColor: Color.fromARGB(255, 114, 199, 187),
+      ),
+    );
+  }
+}
